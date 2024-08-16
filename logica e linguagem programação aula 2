@@ -1,0 +1,20 @@
+# Entrada de dados
+cargo = input("Digite o cargo do funcionário: ").lower()
+dia_da_semana = input("Digite o dia da semana: ").lower()
+
+# Lógica de decisão
+if cargo == "gerente":
+    acesso = True
+elif cargo in ["analista", "estagiário"]:
+    if dia_da_semana in ["segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira"]:
+        acesso = True
+    else:
+        acesso = False
+else:
+    acesso = False
+
+# Saída de dados
+if acesso:
+    print("Acesso permitido.")
+else:
+    print("Acesso negado.")
