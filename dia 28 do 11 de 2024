@@ -1,0 +1,9 @@
+#Codigo do dia 28 de novembro "modelagem" Prof: Orlando
+a = input("Digite o seu nome: ")
+b = int(input("Digite quantas vezes quer repetir: "))
+separacao = int(input("Digite de quanto em quanto quer que separe as linhas: "))
+
+for i in range(1, b + 1): 
+    print(a, end=" ") 
+    if i % separacao == 0: 
+        print()
